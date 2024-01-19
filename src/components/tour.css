@@ -1,0 +1,44 @@
+.toursContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tourBox {
+    border: 1px solid #26d80f;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  
+  .imageBox {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-right: 20px; /* Adjust spacing between image and details */
+  }
+  img{
+    width: 400px;
+    height: 300px;
+    border-radius: 2px;
+  }
+  
+  .details {
+    flex-grow: 1; /* Allow details to take remaining space */
+  }
+  
+  .infos {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #26d80f;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #26d80f;
+    border-radius: 3px;
+  }
+  
