@@ -44,8 +44,8 @@ const Tour = () => {
                 {readMore && tour.id === readMore
                   ? tour.info
                   : `${tour.info.substring(0, 200)}`}
-                <button onClick={() => setReadMore(readMore === tour.id ? false : tour.id)}>
-                  {readMore === tour.id ? 'show less' : 'read more'}
+                <button className='readmore' onClick={() => setReadMore(readMore === tour.id ? false : tour.id)}>...
+                  {readMore === tour.id ? 'show less' :  'read more'}
                 </button>
               </p>
               <button className='deletebtn' onClick={() => removeTour(tour.id)}>Not Interested</button>
