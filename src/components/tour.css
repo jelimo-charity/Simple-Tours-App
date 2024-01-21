@@ -1,44 +1,98 @@
-.toursContainer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .tourBox {
-    border: 1px solid #26d80f;
-    margin-bottom: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-  }
-  h1{
-    font-size: 3.5rem;
-  }
-  
-  .imageBox {
-    flex-shrink: 0; /* Prevent image from shrinking */
-    margin-right: 20px; /* Adjust spacing between image and details */
-  }
-  img{
-    width: 400px;
-    height: 300px;
-    border-radius: 2px;
-  }
-  
-  .details {
-    flex-grow: 1; /* Allow details to take remaining space */
-  }
-  
-  .infos {
-    margin-top: 10px;
-  }
-  
-  button {
-    background-color: #fff;
-    color: #26d80f;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: 1px solid #26d80f;
-    border-radius: 3px;
-  }
-  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: #26d80f;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  /* background-color: rgb(250, 248, 248); */
+}
+.tourBox {
+  background-color: rgb(250, 248, 248);
+  margin: 2rem 0;
+  width: 400px; /*Set width to half of the container with some margin */
+  height: auto;
+  margin-left: 20px;
+  /* padding: 30px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.tourBox:hover {
+  /* Add hover styles if needed */
+}
+.tourBox img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+
+.details {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5px;
+}
+.details .name{
+ padding-right: 30px;
+}
+.details .price{
+  color: #fff;
+  background-color: #26d80f;
+  padding: 3px;
+  font-size: 1.3rem;
+}
+.infos {
+  padding: 1.3rem;
+}
+
+button {
+  background-color: #fff;
+  color: #26d80f;
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+  border: 1px solid #26d80f;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.deletebtn{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #26d80f;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  padding: 6px;
+  width: 180px;
+}
+button:hover {
+  background-color: #26d80f;
+  color: #fff;
+  border-color: #26d80f;
+}
